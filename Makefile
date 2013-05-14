@@ -1,6 +1,4 @@
-all: thesis.pdf
-
-thesis.pdf: thesis.tex sjtubannerred.pdf
+all:
 	pdflatex thesis
 	pdflatex thesis
 	bibtex thesis || true
