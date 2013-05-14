@@ -60,6 +60,14 @@
 
 \usepackage[format=plain,labelsep=quad,font=bf]{caption}
 
+\usepackage[numbers,sort&compress]{natbib} 
+\usepackage{hypernat} 
+\bibliographystyle{GBT7714-2005N}
+
+% add references to TOC
+\usepackage[nottoc]{tocbibind}
+\settocbibname{References}
+
 %%%%%%%%%%%%%%%%%%%%%%
 % Document starts here
 %%%%%%%%%%%%%%%%%%%%%%
@@ -119,6 +127,12 @@ according to specific practical demands.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+\begin{figure}
+  \centering
+  \includegraphics{figures/chap1/test}
+  \caption{Test figure}
+\end{figure}
+
 \section{Section Name}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -175,8 +189,18 @@ throughout the evening. \\
 \end{tabular}
 \end{table}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem \cite{BrogiC91} ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum \cite{JaffarYZ07} dolor sit amet, consectetur adipisicing elit \cite{Mehl:diss}, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+{\def\chapter*#1{}
+\clearpage
+\begin{center}\fontsize{14pt}{14pt}\selectfont\bf REFERENCE\end{center}
+\begin{spacing}{1.5}
+\fontsize{12pt}{12pt}\selectfont
+% add bib files here
+\bibliography{reference/chap2}
+\end{spacing}}
+
 \end{document}
 
