@@ -10,3 +10,11 @@ Features
 - Table and figure caption style
 - Equation label style
 - Bibliography and citation style
+
+Usage
+-----
+Prepare the following files in directory `body`.
+- config.tex
+- abstract.tex
+- main.tex
+- bibs.tex

@@ -4,9 +4,7 @@
 % Thesis-specific settings
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\newcommand{\ThesisTitle}{OPTICAL PROPERTIES OF COMPOSITE MATERIALS MADE FROM HYDROGEL AND BUTTERFLY WING SCALES}
-% BUG: title cannot be too long
-\newcommand{\ThesisTitle}{AUTOMATIC PROGRAM SYNTHESIS}
+\input{body/config}
 
 %%%%%%%%%%%%%%%%
 % Theme settings
@@ -86,42 +84,7 @@
 
 \maketitle
 
-\begin{abstract}
-\noindent
-Lepidopteron wing scales with their periodic dielectric 
-structures producing glaring iridescent colors attract 
-great attention in bio-photonic devices design and 
-fabrication during the past decade. One inevitable 
-drawback of these bio-templates is the lack in 
-flexibility limited by the wing scales’ inborn inner 
-microstructure. We design two novel routes to control 
-and modify the original structure of Chrysiridia 
-rhipheus (sunset moth) wing scales and thus their 
-optical properties, using a kind of biocompatible 
-environment sensitive interpenetrating polymer network 
-(IPN) chitosan/PVA. The immobilized wing scales' 
-visible reflectance is responsive to both the electric 
-field and the pH condition, owing to their inner 
-microstructure change induced by the IPN volume change 
-in the swell/deswell process driven by electric field 
-and pH condition. Using electric field as the driving 
-force, we obtain a total \textasciitilde 150nm visible 
-reflectance shift within several minutes, which can be 
-used as an optical switch or electric field sensor; in 
-pH driving system, we obtain a total \textasciitilde
-260nm visible reflectance shift, and prominent 
-sensitivity of moth wing scale indicator's optical 
-property in week basic condition (pH=8-10) promises an 
-in vivo bio-sensing pH monitor that can be used in 
-general bio-medical and bio-controlled applications. 
-Our multi-responsive optical sensors for E-field and 
-pH condition broaden the natural species' pool for 
-functional structure selection, and provide designable 
-and controllable bio-inspired material solutions 
-according to specific practical demands.
-\end{abstract}
-
-\keywords{Biomedical Sensor, Lepidoptera scales, Nature photonics, Optical sensor/indicator, Eletric field sensitive; pH condition sensitive; Interpenetrating polymer network}
+\input{body/abstract}
 
 \clearpage
 \begin{spacing}{1.0}
@@ -131,96 +94,14 @@ according to specific practical demands.
 \clearpage
 \pagenumbering{arabic} % enable page numbering
 
-\chapter{Introduction}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\begin{figure}
-  \centering
-  \includegraphics{figures/chap1/test}
-  \caption{Test figure}
-\end{figure}
-
-\section{Section Name}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsection{Subsection}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsubsection{Subsubsection}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\chapter{Conclusion}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\section{Section Name}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsection{Subsection}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\subsubsection{Subsubsection}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\begin{equation}
-  m = \sum_{k=1}^K m_k
-\end{equation}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\begin{equation}
-  \begin{aligned}
-    f(x,y) &= f(0,0) + \frac{1}{1!}(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}) f(0,0) \\
-           &+ \frac{1}{2!}(x\frac{\partial}{\partial x}+\frac{\partial}{\partial y})^2 f(0,0) + K \\
-           &+ \frac{1}{n!}(x\frac{\partial}{\partial x}+\frac{\partial}{\partial y})^n f(0,0) + K
-  \end{aligned}
-\end{equation}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-\begin{table}
-\centering
-\caption{With width specified}
-\begin{tabular}{ l | l | l | p{5cm} }
-\hline
-Day & Min Temp & Max Temp & Summary \\ \hline
-Monday & 11C & 22C & A clear day with lots of sunshine.
-However, the strong breeze will bring down the temperatures. \\
-Tuesday & 9C & 19C & Cloudy with rain, across many northern regions. Clear spells
-across most of Scotland and Northern Ireland,
-but rain reaching the far northwest. \\
-Wednesday & 10C & 21C & Rain will still linger for the morning.
-Conditions will improve by early afternoon and continue
-throughout the evening. \\
-\hline
-\end{tabular}
-\end{table}
-
-Lorem \cite{BrogiC91}{123} ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum \cite{JaffarYZ07}{2} dolor sit amet, consectetur adipisicing elit \cite{Mehl:diss}{3}, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit \oldcite{BrogiC91} anim id est laborum.
+\input{body/main}
 
 {\def\chapter*#1{}
 \clearpage
 \begin{center}\fontsize{14pt}{14pt}\selectfont\bf REFERENCE\end{center}
 \begin{spacing}{1.5}
 \fontsize{12pt}{12pt}\selectfont
-% add bib files here
-\bibliography{reference/chap2}
+\input{body/bibs}
 \end{spacing}}
 
 \end{document}
-
