@@ -1,0 +1,162 @@
+\documentclass[12pt,a4paper,notitlepage,oneside]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thesis-specific settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcommand{\ThesisTitle}{OPTICAL PROPERTIES OF COMPOSITE MATERIALS MADE FROM HYDROGEL AND BUTTERFLY WING SCALES}
+% BUG: title cannot be too long
+\newcommand{\ThesisTitle}{AUTOMATIC PROGRAM SYNTHESIS}
+
+%%%%%%%%%%%%%%%%
+% Theme settings
+%%%%%%%%%%%%%%%%
+
+\usepackage{times}
+
+\linespread{1.5}
+
+\usepackage[a4paper,top=1.4in,head=1.5cm,headsep=0.5cm,bottom=1.28in,left=1.25in,right=1.25in]{geometry}
+
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{%
+  \lhead{\includegraphics[width=4.3cm]{sjtubannerred}}
+  \chead{}
+  \rhead{\begin{minipage}{10cm}\begin{flushright}\fontsize{10pt}{12pt}\selectfont\ThesisTitle\end{flushright}\end{minipage}}
+  \lfoot{}
+  \cfoot{\fontsize{9pt}{9pt}\selectfont\thepage}
+  \rfoot{}
+  \renewcommand{\headrulewidth}{1pt}
+  \renewcommand{\footrulewidth}{0pt}}
+\pagestyle{plain}
+
+\title{\fontsize{16pt}{22pt}\selectfont\bf\ThesisTitle}
+\author{}
+\date{}
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{ABSTRACT}
+\renewcommand{\abstractnamefont}{\fontsize{14pt}{14pt}\selectfont\bf}
+\renewcommand{\abstracttextfont}{\fontsize{12pt}{16pt}\selectfont}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+
+\newcommand{\keywords}[1]{\noindent\textbf{Keywords:} #1}
+
+\usepackage[linktocpage=true]{hyperref}
+\usepackage{setspace}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\fontsize{14pt}{14pt}\selectfont\centering\bf}{\chaptertitlename\ \thechapter}{14pt}{}{}
+\titleformat{\section}[block]{\fontsize{14pt}{14pt}\selectfont\bf}{\thetitle}{14pt}{}{}
+\titleformat{\subsection}[block]{\fontsize{14pt}{14pt}\selectfont\bf}{\thetitle}{14pt}{}{}
+\titleformat{\subsubsection}[block]{\fontsize{14pt}{14pt}\selectfont\bf}{\thetitle}{14pt}{}{}
+\titlespacing*{\chapter}{0pt}{0pt}{28pt}
+\titlespacing*{\section}{0pt}{16pt}{14pt}
+\titlespacing*{\subsection}{0pt}{16pt}{14pt}
+\titlespacing*{\subsubsection}{0pt}{16pt}{14pt}
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Document starts here
+%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\pagenumbering{gobble} % disable page numbering
+
+\maketitle
+
+\begin{abstract}
+\noindent
+Lepidopteron wing scales with their periodic dielectric 
+structures producing glaring iridescent colors attract 
+great attention in bio-photonic devices design and 
+fabrication during the past decade. One inevitable 
+drawback of these bio-templates is the lack in 
+flexibility limited by the wing scales’ inborn inner 
+microstructure. We design two novel routes to control 
+and modify the original structure of Chrysiridia \
+rhipheus (sunset moth) wing scales and thus their 
+optical properties, using a kind of biocompatible 
+environment sensitive interpenetrating polymer network 
+(IPN) chitosan/PVA. The immobilized wing scales' 
+visible reflectance is responsive to both the electric 
+field and the pH condition, owing to their inner 
+microstructure change induced by the IPN volume change 
+in the swell/deswell process driven by electric field 
+and pH condition. Using electric field as the driving 
+force, we obtain a total \textasciitilde 150nm visible 
+reflectance shift within several minutes, which can be 
+used as an optical switch or electric field sensor; in 
+pH driving system, we obtain a total \textasciitilde
+260nm visible reflectance shift, and prominent 
+sensitivity of moth wing scale indicator's optical 
+property in week basic condition (pH=8-10) promises an 
+in vivo bio-sensing pH monitor that can be used in 
+general bio-medical and bio-controlled applications. 
+Our multi-responsive optical sensors for E-field and 
+pH condition broaden the natural species' pool for 
+functional structure selection, and provide designable 
+and controllable bio-inspired material solutions 
+according to specific practical demands.
+\end{abstract}
+
+\keywords{Biomedical Sensor, Lepidoptera scales, Nature photonics, Optical sensor/indicator, Eletric field sensitive; pH condition sensitive; Interpenetrating polymer network}
+
+\clearpage
+\begin{spacing}{1.0}
+\tableofcontents
+\end{spacing}
+
+\clearpage
+\pagenumbering{arabic} % enable page numbering
+
+\chapter{Introduction}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Section Name}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Subsection}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsubsection{Subsubsection}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\chapter{Conclusion}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\section{Section Name}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsection{Subsection}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\subsubsection{Subsubsection}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+\end{document}
+
