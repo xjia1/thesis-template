@@ -33,6 +33,10 @@ Prepare the following files in directory `thesis/body`.
 - main.tex
 - bibs.tex
 
+`\cite` is redefined to generate two citation formats:
+- For the required citation format of "([n], Author, Year: Page.)", use `\cite[Page]{Name}` (e.g. `\cite[24]{JaffarYZ07}`).
+- For inline text citation format of "Author (Year)", use `\cite{Name}` as normal (e.g. `\cite{JaffarYZ07}`).
+
 License
 -------
 

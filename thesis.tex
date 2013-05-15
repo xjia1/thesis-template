@@ -58,7 +58,7 @@
 
 \usepackage[format=plain,labelsep=quad,font=bf]{caption}
 
-\usepackage[round,semicolon,numbers,sort&compress]{natbib}
+\usepackage[round,semicolon,authoryear,sort&compress]{natbib}
 \bibliographystyle{GBT7714-2005N}
 
 % add references to TOC
@@ -67,7 +67,12 @@
 
 % citation format: ([n], Author, Year: Page.)
 \let\oldcite\cite
-\renewcommand{\cite}[2]{\citetext{[\citenum{#1}], \citeauthor{#1}, \citeyear{#1}: #2.}}
+\usepackage{ifthen} % provides \ifthenelse test
+\usepackage{xifthen} % provides \isempty test
+\renewcommand{\cite}[2][]{%
+  \ifthenelse{\isempty{#1}}
+    {\oldcite{#2}}
+    {\citetext{[\citenum{#2}], \citeauthor{#2}, \citeyear{#2}: #1.}}}
 
 \usepackage{amsmath,amssymb,amsthm}
 \makeatletter
