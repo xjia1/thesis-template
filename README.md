@@ -37,6 +37,8 @@ Prepare the following files in directory `thesis/body`.
 - For the required citation format of "([n], Author, Year: Page.)", use `\cite[Page]{Name}` (e.g. `\cite[24]{JaffarYZ07}`).
 - For inline text citation format of "Author (Year)", use `\cite{Name}` as normal (e.g. `\cite{JaffarYZ07}`).
 
+Source code listings should be less than 70 columns in width for best display quality.
+
 License
 -------
 
