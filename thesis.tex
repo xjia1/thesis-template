@@ -78,6 +78,9 @@
 \makeatletter
 \long\def\theequation{\ifnum \c@chapter > \z@ \thechapter -\fi \@arabic \c@equation}
 \makeatother
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{problem}[theorem]{Problem}
 
 \usepackage{listings}
 \usepackage{color}
