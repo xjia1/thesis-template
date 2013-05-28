@@ -1,6 +1,5 @@
 all:
 	pdflatex thesis
-	pdflatex thesis
 	bibtex thesis || true
 	pdflatex thesis
 	pdflatex thesis
