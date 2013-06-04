@@ -32,6 +32,7 @@ Prepare the following files in directory `thesis/body`.
 - abstract.tex
 - main.tex
 - bibs.tex
+- ack.tex
 
 `\cite` is redefined to generate two citation formats:
 - For the required citation format of "([n], Author, Year: Page.)", use `\cite[Page]{Name}` (e.g. `\cite[24]{JaffarYZ07}`).
