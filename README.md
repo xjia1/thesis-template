@@ -19,7 +19,7 @@ Usage
     $ git clone git://github.com/stfairy/thesis-bootstrap.git thesis
     $ cd thesis
     $ rm -rf .git
-    $ ./link-template
+    $ ./link-templates
     $ make
 
 You can add `thesis` to your version control system to track your own changes.
