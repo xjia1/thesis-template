@@ -25,7 +25,7 @@ Usage
 You can add `thesis` to your version control system to track your own changes.
 Changes to the thesis template can be pulled from `thesis-template` directory.
 
-If you use a different location for `thesis-template`, modify `link-template` accordingly.
+If you use a different location for `thesis-template`, modify `link-templates` accordingly.
 
 Prepare the following files in directory `thesis/body`.
 - config.tex
